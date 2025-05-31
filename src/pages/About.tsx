@@ -12,7 +12,7 @@ function About() {
         title="About"
         subTitle="The Journey"
       />
-      <section className="relative z-2 bg-primary px-[2rem] py-[2rem] flex flex-col gap-[2rem] items-center lg:px-[5rem] lg:py-[3rem] lg:items-start ">
+      <section className="relative z-2 bg-primary px-[2rem] py-[2rem] flex flex-col items-center lg:px-[5rem] gap-[2rem] min-h-screen justify-between lg:py-[3rem] lg:items-start ">
         <h1 className="font-primary text-secondary text-header-sm leading-[calc(1.2_*_var(--text-header-sm))] font-semibold text-center lg:text-left">
           Bridging design and development to deliver seamless user experiences
           on the web.

@@ -34,7 +34,7 @@ html {
   overflow-x: hidden;
   height: -webkit-fill-avaiable;
   font-size: 24px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1536px) {
     font-size: 20px;
   }
   @media (max-width: 768px) {
@@ -43,4 +43,23 @@ html {
 }
 body {
   height: -webkit-fill-avaiable;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 1rem));
+  }
+}
+
+@keyframes scrollLarge {
+  to {
+    transform: translate(calc(-50% - 1.5rem));
+  }
+}
+
+.animate-scroll {
+  animation: scrollLarge 10s linear infinite;
+  @media (max-width: 1024px) {
+    animation: scroll 10s linear infinite;
+  }
 }

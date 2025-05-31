@@ -84,7 +84,7 @@ function CustomCursor() {
         "fixed top-0 left-0 z-100 bg-accent pointer-events-none transition-all duration-200 ease-out",
         {
           ["size-[40px]"]: cursorVariant === "default",
-          ["size-[120px] mix-blend-difference"]: cursorVariant === "grow",
+          ["size-[150px] mix-blend-difference"]: cursorVariant === "grow",
           ["size-0"]: cursorVariant === "shrink",
           ["rounded-[50%]"]: cursorVariant !== "image",
           [`w-[10rem] h-[13rem] rounded-[15px] bg-cover bg-center`]:

@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-    <header className="relative z-0 bg-primary w-full flex items-center justify-center lg:h-[10vh] sticky top-0">
+    <header className="z-0 bg-primary w-full flex items-center justify-center lg:h-[10vh] sticky top-0">
       <nav className="w-full flex items-center px-[1rem] py-[1rem] justify-between">
         <img
           src={Logo}

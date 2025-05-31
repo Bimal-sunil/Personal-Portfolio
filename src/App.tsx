@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <CustomCursor />
-      <main className="bg-primary min-h-screen">
+      <main className="bg-primary min-h-screen relative">
         <Home />
         <About />
         <Career />

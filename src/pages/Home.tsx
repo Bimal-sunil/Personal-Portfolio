@@ -5,7 +5,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="w-full flex flex-col items-center justify-between h-[100dvh] p-[1rem]"
+      className="sticky top-0 w-full flex flex-col items-center justify-between h-[100dvh] p-[1rem]"
     >
       <Header />
       <div className="flex flex-col items-center">

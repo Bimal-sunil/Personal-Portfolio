@@ -4,7 +4,7 @@ import SectionTitlePage from "./SectionTitlePage";
 function Projects() {
   return (
     <>
-      <SectionTitlePage id="projects" />
+      <SectionTitlePage id="projects" title="Projects" subTitle="Selected Works"/>
       <section className="h-screen">Projects</section>
     </>
   );

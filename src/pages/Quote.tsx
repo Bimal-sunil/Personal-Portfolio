@@ -1,0 +1,16 @@
+import React from "react";
+
+function Quote() {
+  return (
+    <section className="sticky top-0 h-[100dvh] z-8 bg-secondary py-[2rem] lg:py-[3rem] flex items-center justify-center">
+      <div className="w-full h-full border-y border-primary flex items-center justify-center p-[2rem] lg:px-[5rem]">
+        <h1 className="lg:w-[60%] font-primary font-semibold text-primary text-header-sm text-center leading-[calc(1.3_*_var(--text-header-sm))]">
+          “My journey isn’t about doing more, but creating better—
+          <span className="font-secondary italic">deeper, truer, realer.</span>”
+        </h1>
+      </div>
+    </section>
+  );
+}
+
+export default Quote;

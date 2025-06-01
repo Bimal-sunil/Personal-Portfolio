@@ -4,6 +4,7 @@ import Career from "./pages/Career";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import CustomCursor from "./animations/CustomCursor";
+import Quote from "./pages/Quote";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Career />
         <Projects />
+        <Quote />
         <Contact />
       </main>
     </>

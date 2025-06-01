@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitlePage from "./SectionTitlePage";
 import Button from "../components/Button";
 import AboutImage from "../assets/photos/About.jpg";
+import { resume } from "../data";
 
 function About() {
   return (
@@ -17,7 +18,7 @@ function About() {
           Bridging design and development to deliver seamless user experiences
           on the web.
         </h1>
-        <Button label="Download CV" />
+        <Button label="Download CV" link={resume} target="_blank"/>
         <div className="flex flex-col items-center gap-[1.5rem] lg:flex-row lg:items-start">
           <div className="rounded-[20px] overflow-hidden lg:flex-1 lg:w-[20rem] lg:h-[20rem] max-h-[70vh]">
             <img

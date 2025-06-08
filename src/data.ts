@@ -53,3 +53,25 @@ export const projects: {
     bannerImage: Portfolio,
   },
 ];
+
+export const socials: {
+  name: string;
+  link: string;
+}[] = [
+  {
+    name: "Twitter",
+    link: "https://x.com/imSolodot",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/bimalsunil",
+  },
+  {
+    name: "Github",
+    link: "https://github.com/Bimal-sunil",
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/solo.dot",
+  },
+];

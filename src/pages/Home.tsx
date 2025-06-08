@@ -10,7 +10,7 @@ function Home() {
       <Header />
       <div className="flex flex-col items-center">
         <h1 className="font-primary text-title-sm font-semibold text-center text-secondary leading-20 sm:text-title-md sm:leading-30 lg:text-[min(25vh,var(--text-title-lg))] lg:leading-[calc(1.1_*_min(25vh,_var(--text-title-lg)))] cursor-show-image">
-          Hey, <br /> I'm Bimal
+          Hello <br /> I'm Bimal
         </h1>
         <div className="w-full flex gap-[0.5rem] items-center lg:w-[75%] ">
           <span className="flex-1 h-[1px] bg-secondary"></span>

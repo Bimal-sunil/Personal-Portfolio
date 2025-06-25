@@ -1,8 +1,10 @@
 import React from "react";
 import SectionTitlePage from "./SectionTitlePage";
 import Button from "../components/Button";
-import AboutImage from "../assets/photos/About.jpg";
+import AboutImage from "../assets/photos/About.png";
 import { resume } from "../data";
+import TranslateY from "../animations/TranslateY";
+import Fade from "../animations/Fade";
 
 function About() {
   return (
@@ -13,44 +15,54 @@ function About() {
         title="About"
         subTitle="The Journey"
       />
-      <section className="relative z-2 bg-primary px-[2rem] py-[2rem] flex flex-col items-center lg:px-[5rem] gap-[2rem] min-h-screen justify-between lg:py-[3rem] lg:items-start ">
-        <h1 className="font-primary text-secondary text-header-sm leading-[calc(1.2_*_var(--text-header-sm))] font-semibold text-center lg:text-left">
-          Bridging design and development to deliver seamless user experiences
-          on the web.
-        </h1>
-        <Button label="Download CV" link={resume} target="_blank"/>
-        <div className="flex flex-col items-center gap-[1.5rem] lg:flex-row lg:items-start">
-          <div className="rounded-[20px] overflow-hidden lg:flex-1 lg:w-[20rem] lg:h-[20rem] max-h-[70vh]">
-            <img
-              src={AboutImage}
-              alt="Image of myself in a white background"
-              className="w-full h-full object-cover object-center"
-            />
-          </div>
-          <div className="font-primary text-secondary text-center leading-[calc(1.5_*_var(--text-body))] lg:text-left lg:flex-2">
-            <p>
-              <span className="font-medium">
-                I'm Bimal S Kumar — a Web Developer with 3 years of hands-on
-                experience in UI development and design.
-              </span>{" "}
-              I specialize in creating responsive, user-focused web interfaces
-              that balance functionality with visual clarity. My background in
-              Computer Science, combined with my role as a Product Development
-              Engineer, has equipped me to deliver clean, scalable solutions
-              that align with both user needs and business goals.
-            </p>
+      <section className="relative z-2 bg-primary px-[2rem] py-[2rem] flex flex-col items-center lg:px-[5rem] gap-[2rem] justify-between lg:py-[3rem] lg:items-start ">
+        <TranslateY>
+          <h1 className="font-primary text-accent text-header-sm leading-[calc(1.2_*_var(--text-header-sm))] font-semibold text-center">
+            Bridging <span className="text-secondary">design</span> and{" "}
+            <span className="text-secondary">development</span> to deliver
+            seamless user experiences on the{" "}
+            <span className="text-secondary">web.</span>
+          </h1>
+        </TranslateY>
+        <div className="flex flex-col items-center gap-[1.5rem]">
+          <TranslateY>
+            <div className="rounded-[20px] overflow-hidden lg:w-full">
+              <img
+                src={AboutImage}
+                alt="Image of myself in a white background"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </TranslateY>
+          <div className="flex flex-col items-center">
+            <div className="font-primary text-secondary text-center leading-[calc(1.5_*_var(--text-body))] lg:w-[60%]">
+              <TranslateY>
+                <p>
+                  <span className="font-medium">
+                    I'm Bimal S Kumar — a Web Developer with 3 years of
+                    experience in UI development and design.
+                  </span>{" "}
+                  I build responsive, user-focused interfaces that balance
+                  function and clarity. With a background in Computer Science
+                  and a role as a Product Development Engineer, I deliver
+                  scalable solutions that meet both user and business needs.
+                </p>
+                <br />
+                <p>
+                  <span className="font-medium">
+                    Beyond coding, I'm passionate about photography and design,
+                  </span>{" "}
+                  which sharpen my eye for detail and enhance my creative
+                  thinking. I'm driven by curiosity, collaboration, and the
+                  desire to grow — always eager to take on meaningful,
+                  challenging work.
+                </p>
+              </TranslateY>
+            </div>
             <br />
-            <p>
-              <span className="font-medium">
-                Beyond the code, I’m deeply passionate about photography and
-                design — creative outlets that sharpen my eye for detail and
-                influence my problem-solving approach.
-              </span>{" "}
-              I’m driven by curiosity, collaboration, and a desire to
-              continuously evolve. Working with like-minded professionals on
-              impactful products is what excites me most, and I’m always open to
-              new challenges that push the boundaries of my skills.
-            </p>
+            <Fade>
+              <Button label="Download CV" link={resume} target="_blank" />
+            </Fade>
           </div>
         </div>
       </section>

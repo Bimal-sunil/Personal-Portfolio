@@ -27,13 +27,14 @@ function ExpandingButton(props: Props) {
       {!isExpanded && (
         <motion.button
           layoutId="expandable"
+          layout={false}
           className={twMerge(
             classNames(
               "w-fit min-w-[10rem] px-[2rem] py-[0.75rem] rounded-[50px] bg-primary text-body font-primary cursor-pointer font-medium hover:bg-transparent border-[2px] border-transparent hover:border-primary hover:text-primary transition-all duration-[300ms] ease-in-out lg:text-body",
               "text-secondary",
               className,
               {
-                ["opacity-[0.75] pointer-events-none"]: disabled,
+                ["pointer-events-none"]: disabled,
               }
             )
           )}
@@ -42,7 +43,7 @@ function ExpandingButton(props: Props) {
             onClick?.();
           }}
         >
-          {label}
+          <div>{label}</div>
         </motion.button>
       )}
 

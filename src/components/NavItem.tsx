@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import classNames from "classnames";
 import { Link } from "react-scroll";
+import TranslateY from "../animations/TranslateY";
 
 type Props = {
   /**Label for the nav item */
@@ -33,34 +34,35 @@ function NavItem(props: Props) {
   } = props;
   const activeEl = useRef<HTMLLIElement>(null);
   return (
-    <li
-      className={classNames(
-        className,
-        "cursor-pointer lg:text-body lg:font-medium overflow-hidden transition-all duration-[300ms] ease-in-out text-title-sm font-medium cursor-shrink-target"
-      )}
-      ref={activeEl}
-    >
-      <Link
-        // key={key}
-        to={path}
-        smooth={true}
-        duration={800}
-        onClick={onClick}
-        spy={true}
+    <TranslateY className="lg:overflow-visible">
+      <li
         className={classNames(
-          "inline-block relative transition-all duration-[200ms] ease-in-out text-secondary hover:translate-y-[-110%] hover:text-accent",
-          {
-            ["text-accent"]: isActive,
-            ["hover:translate-none"]: !interactive,
-          }
+          className,
+          "cursor-pointer lg:text-body lg:font-medium overflow-hidden transition-all duration-[300ms] ease-in-out text-title-sm font-medium cursor-shrink-target"
         )}
+        ref={activeEl}
       >
-        {label}
-        {interactive && (
-          <div className="flex absolute top-[110%] left-[0]">{label}</div>
-        )}
-      </Link>
-    </li>
+        <Link
+          to={path}
+          smooth={true}
+          duration={800}
+          onClick={onClick}
+          spy={true}
+          className={classNames(
+            "inline-block relative transition-all duration-[200ms] ease-in-out text-secondary hover:translate-y-[-110%] hover:text-accent",
+            {
+              ["text-accent"]: isActive,
+              ["hover:translate-none"]: !interactive,
+            }
+          )}
+        >
+          {label}
+          {interactive && (
+            <div className="flex absolute top-[110%] left-[0]">{label}</div>
+          )}
+        </Link>
+      </li>
+    </TranslateY>
   );
 }
 

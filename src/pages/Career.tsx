@@ -29,7 +29,7 @@ function Career() {
         subTitle="Experience"
         className="relative z-3"
       />
-      <section className="relative z-4 bg-primary px-[2rem] py-[3rem] flex flex-col gap-[3rem] items-center justify-between">
+      <section className="relative z-4 bg-primary px-[2rem] py-[3rem] flex flex-col gap-[3rem] items-center justify-between lg:px-[5rem]">
         <div className="relative">
           <div className="absolute top-0 bottom-0 left-0 flex flex-col items-center lg:left-[50%] ">
             <motion.span

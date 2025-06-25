@@ -1,5 +1,8 @@
 import classNames from "classnames";
 import { FiArrowDown } from "react-icons/fi";
+import TranslateY from "../animations/TranslateY";
+import Extend from "../animations/Extend";
+import Fade from "../animations/Fade";
 
 type Props = {
   /**Id of each section*/
@@ -25,18 +28,28 @@ function SectionTitlePage(props: Props) {
       )}
     >
       <div className="relative flex flex-col items-center justify-center w-full h-full lg:rounded-[20px] border-y border-primary lg:border">
-        <h1 className="text-title-sm text-primary font-primary font-semibold leading-20 sm:text-title-md sm:leading-30 lg:text-[min(25vh,var(--text-title-lg))] lg:leading-[calc(1.1_*_min(25vh,_var(--text-title-lg)))] cursor-grow-target">
-          {title}
-        </h1>
-        <div className="w-[50%] flex items-center gap-[0.5rem]">
-          <span className="flex-1 h-[1px] bg-primary"></span>
-          <span className="font-secondary text-primary italic text-content-sm sm:text-content-md lg:text-content-lg">
-            {subTitle}
-          </span>
-          <span className="flex-1 h-[1px] bg-primary"></span>
-        </div>
-        <div className="absolute bottom-0 translate-y-[50%] bg-secondary p-[0.25rem]">
-          <FiArrowDown className="w-full h-full p-[0.5rem] rounded-[50%] border border-primary" />
+        <div className="flex flex-col items-center justify-center">
+          <TranslateY>
+            <h1 className="text-title-sm text-primary font-primary font-semibold leading-20 sm:text-title-md sm:leading-30 lg:text-[min(25vh,var(--text-title-lg))] lg:leading-[calc(1.1_*_min(25vh,_var(--text-title-lg)))] cursor-grow-target">
+              {title}
+            </h1>
+          </TranslateY>
+          <div className="w-full flex items-center gap-[0.5rem]">
+            <Extend direction="left">
+              <span className="block w-full h-[1px] bg-primary"></span>
+            </Extend>
+            <Fade>
+              <span className="block font-secondary text-primary italic text-content-sm sm:text-content-md lg:text-content-lg">
+                {subTitle}
+              </span>
+            </Fade>
+            <Extend direction="right">
+              <span className="block w-full h-[1px] bg-primary"></span>
+            </Extend>
+          </div>
+          <div className="absolute bottom-0 translate-y-[50%] bg-secondary p-[0.25rem]">
+            <FiArrowDown className="w-full h-full p-[0.5rem] rounded-[50%] border border-primary" />
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 import { FiArrowUpRight } from "react-icons/fi";
 import { formatToTwoDigits } from "../helpers";

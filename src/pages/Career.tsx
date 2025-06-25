@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import SectionTitlePage from "./SectionTitlePage";
 import { experienceData } from "../data";
 import ExperienceCard from "../components/ExperienceCard";

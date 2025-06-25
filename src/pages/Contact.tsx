@@ -1,4 +1,3 @@
-import React from "react";
 import { socials } from "../data";
 import SocialLink from "../components/SocialLink";
 import { PiCopyright } from "react-icons/pi";

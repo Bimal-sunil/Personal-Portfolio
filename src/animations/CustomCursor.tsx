@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import classNames from "classnames";
 import HeroImage from "../assets/photos/Hero.jpg";

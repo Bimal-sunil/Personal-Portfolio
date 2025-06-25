@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitlePage from "./SectionTitlePage";
 import { projects } from "../data";
 import ProjectCard from "../components/ProjectCard";

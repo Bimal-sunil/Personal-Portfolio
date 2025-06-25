@@ -1,4 +1,3 @@
-import React from "react";
 import TranslateY from "../animations/TranslateY";
 
 type Props = {

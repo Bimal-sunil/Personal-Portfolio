@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import ExpandingButton from "../components/ExpandingButton";
 import FullLogo from "../assets/Logo-dark.svg";

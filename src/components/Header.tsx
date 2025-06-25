@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo from "../assets/Logo-light.svg";
 import NavItem from "./NavItem";
 import Hamburger from "./Hamburger";

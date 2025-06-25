@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitlePage from "./SectionTitlePage";
 import Button from "../components/Button";
 import AboutImage from "../assets/photos/About.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header";
 import TranslateY from "../animations/TranslateY";
 import Extend from "../animations/Extend";

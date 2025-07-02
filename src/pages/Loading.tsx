@@ -19,7 +19,7 @@ function Loading(props: Props) {
 
   useEffect(() => {
     if (progress < 100) {
-      const timer = setTimeout(() => setProgress(progress + 1), 40);
+      const timer = setTimeout(() => setProgress(progress + 1), 20);
       return () => clearTimeout(timer);
     }
   }, [progress, onFinish]);

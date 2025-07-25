@@ -41,7 +41,7 @@ export const projects: {
     techsUsed: ["React Js", "Tmdb API", "redux"],
     description:
       "An app to explore movies and TV series across various categories.",
-    pathLink: "https://google.com",
+    pathLink: "https://bimal-sunil.github.io/Cinemanor/",
     bannerImage: Cinemanor,
   },
   {

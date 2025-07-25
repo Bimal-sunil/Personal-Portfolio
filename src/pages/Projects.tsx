@@ -27,6 +27,7 @@ function Projects() {
               projectName={project.projectName}
               techStack={project.techsUsed}
               position={index % 2 === 0 ? "left" : "right"}
+              link={project.pathLink}
             />
           );
         })}

@@ -49,7 +49,7 @@ export const projects: {
     techsUsed: ["React Js", "Vite", "Framer Motion"],
     description:
       "A website highlighting my work, profile, and creative journey.",
-    pathLink: "https://google.com",
+    pathLink: "https://bimalsunil.com",
     bannerImage: Portfolio,
   },
 ];
